@@ -1,5 +1,28 @@
 """
-Menu principal du jeu éducatif pour apprendre les bases de la programmation.
+Jeu éducatif pour apprendre les bases de la programmation.
+
+Ce script sert de point d'entrée pour le jeu éducatif. Il affiche un menu
+principal permettant à l'utilisateur de sélectionner différents niveaux
+d'apprentissage en programmation. Chaque niveau est implémenté dans
+des modules séparés (niveau1, niveau2, niveau3, niveau4, niveau5) et couvre
+des concepts fondamentaux tels que les variables, les conditions, les boucles,
+les fonctions et les listes.
+
+Le script importe les modules nécessaires pour chaque niveau et appelle
+la fonction `menu` pour afficher les options disponibles et gérer
+les sélections de l'utilisateur.
+La boucle continue jusqu'à ce que l'utilisateur choisisse de quitter le jeu.
+
+Modules importés :
+- sys : Pour gérer la sortie du programme.
+- niveau1 : Contient les exercices pour le niveau 1.
+- niveau2 : Contient les exercices pour le niveau 2.
+- niveau3 : Contient les exercices pour le niveau 3.
+- niveau4 : Contient les exercices pour le niveau 4.
+- niveau5 : Contient les exercices pour le niveau 5.
+
+Fonctions :
+- menu() : Affiche le menu principal et gère la sélection des niveaux de jeu.
 """
 
 import sys
@@ -41,5 +64,6 @@ def menu():
         else:
             print("Choix invalide. Essaie encore.")
 
-# Lancer le menu
-menu()
+
+if __name__ == "__main__":
+    menu()

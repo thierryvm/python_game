@@ -1,0 +1,14 @@
+/.vscode/   # Ignore le dossier .vscode
+/__pycache__/ # Ignore le dossier __pycache__
+# Ignorer les fichiers log
+*.log
+
+# Ignorer les dossiers de compilation
+/build/
+
+# Ignorer les fichiers temporaires
+*.tmp
+
+# Ignorer les fichiers de configuration locaux
+secret_config.py
+
