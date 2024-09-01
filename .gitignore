@@ -11,4 +11,4 @@
 
 # Ignorer les fichiers de configuration locaux
 secret_config.py
-
+settings.json
